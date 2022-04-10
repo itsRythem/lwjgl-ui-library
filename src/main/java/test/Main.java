@@ -19,7 +19,7 @@ public class Main {
 	static Window window;
 	
 	public static void main(String[] args) {
-		window = new Window("Hi bedless lol", 800, 500).setBackgroundColor(6, 7, 24).setScreenHandler(new Screen()).getFlags().modify(Flags.HAS_BORDER, Flags.TRUE).start();
+		window = new Window("example title", 800, 500).setBackgroundColor(6, 7, 24).setScreenHandler(new Screen()).getFlags().modify(Flags.HAS_BORDER, Flags.TRUE).start();
 	}
 	
 	public static class Screen extends ScreenHandler {
@@ -29,7 +29,7 @@ public class Main {
 		@Override
 		public void initGui() {
 			fontHandler.initAll();
-			
+			//font renderering does not work atm
 		}
 		
 		@Override
